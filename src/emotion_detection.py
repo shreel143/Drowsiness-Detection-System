@@ -36,7 +36,7 @@ elif mode == "display":
     
     model = emotion_recognition((48,48,1))
     model.load_weights('emotion_weights.hdf5')
-    face_detection = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
+    face_detection = cv2.CascadeClassifier('data/haarcascade_frontalface_default.xml')
     
     # prevents openCL usage and unnecessary logging messages
     cv2.ocl.setUseOpenCL(False)
@@ -110,7 +110,7 @@ elif mode == "display":
                     cv2.putText(cap_image, '***Drowsy***', (300,200), cv2.FONT_HERSHEY_SIMPLEX, 1, (0,0,255), 1)
                     curr_emotion = 'drowsy'
                     COUNTER = 0
-                    playsound('alarm.mp3')
+                    playsound('media/alarm.mp3')
             else:
                 COUNTER = 0
  
@@ -130,7 +130,7 @@ elif mode == "display":
     print(curr_emotion)
     
     #Dataset generated using Spotify API (see crawl_valence_arousal_dataset.py)
-    df = pd.read_csv("valence_arousal_dataset.csv")
+    df = pd.read_csv("data/valence_arousal_dataset.csv")
 
     #Label valence-energy as high and low based on valence-energy plane proposed in Posner J, Russell JA, Peterson BS. 
     #The circumplex model of affect: an integrative approach to affective neuroscience, cognitive development, and psychopathology.
