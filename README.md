@@ -6,14 +6,20 @@ This repository contains the code and dataset used in the research paper "Driver
 
 ## Introduction
 
-Driver drowsiness is a major cause of road accidents, especially during long journeys. To address this issue, we have developed an intelligent system that can detect driver drowsiness in real-time and recommend suitable music to help the driver stay alert and focused. The proposed system uses computer vision and machine learning techniques to detect the driver's drowsiness level and recommend music based on the driver's emotions.
+Driver drowsiness is a major cause of road accidents, especially during long journeys. To address this issue, we have developed an intelligent system that can detect driver drowsiness in real-time and recommend suitable music to help the driver stay alert and focused. The proposed system uses computer vision and machine learning techniques to detect the driver's drowsiness level and recommend music based on the driver's emotions.It employs the Eye Aspect Ratio (EAR) for drowsiness detection and a CNN trained on the FER2013 dataset for emotion analysis.
 
 ## Methodology
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/79741191/236828641-b431b81c-06c3-4cec-992a-3e242e30e282.png">
 </p>
+The methodology combines two components:
 
+1. **Drowsiness Detection**: 
+Utilizes dlib's facial landmarks for real-time eye tracking, employing EAR to detect drowsiness.
+
+2. **Emotion-Based Music Recommendation**:
+Uses a CNN model for emotion recognition, recommending music based on the Russell’s Circumplex Model of emotions.
 ## Requirements
 
 The following software is required to run the code in this repository:
@@ -26,21 +32,31 @@ The following software is required to run the code in this repository:
 
 ## Dataset
 
-The dataset used in this research is a combination of publicly available datasets, which can be found in the `dataset` folder.
+The FER2013 dataset was used for training the emotion recognition model.
 
 ## Usage
 
-To run the drowsiness detection and music recommendation system, run the `main.py` file using the following command:
+1. **Setup and Install Dependencies**: 
+   Clone the repository and install the required libraries.
+   ```
+   git clone https://github.com/shreel143/Drowsiness-Detection-System.git
+   cd Drowsiness-Detection-System
+   pip install opencv-python tensorflow keras numpy
+   ```
 
-```
-python main.py
-```
+2. **Run the Application**: 
+   Start the drowsiness detection and emotion-based music recommendation system by running the `drowsiness_detection.py` script.
+   ```
+   python drowsiness_detection.py
+   ```
+
+   Ensure your webcam is properly set up and the environment is well-lit for accurate detection.
 
 The system will start detecting the drowsiness of the driver in real-time using the camera and recommend music based on the driver's emotions.
 
 ## Results
 
-The proposed drowsiness detection and music recommendation system achieved an accuracy of 95% on the training data and on test data, accuracy was 83% when trained for 30 epochs.The results and analysis can be found in the research paper.
+The proposed drowsiness detection and music recommendation system achieved an accuracy of 95% on the training data and on test data, accuracy was 83% when trained for 30 epochs. The results and analysis can be found in the research paper.
 
 ## Citation
 
