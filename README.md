@@ -20,6 +20,8 @@ Utilizes dlib's facial landmarks for real-time eye tracking, employing EAR to de
 
 2. **Emotion-Based Music Recommendation**:
 Uses a CNN model for emotion recognition, recommending music based on the Russell’s Circumplex Model of emotions.
+
+
 ## Requirements
 
 The following software is required to run the code in this repository:
@@ -58,6 +60,15 @@ The system will start detecting the drowsiness of the driver in real-time using 
 
 The proposed drowsiness detection and music recommendation system achieved an accuracy of 95% on the training data and on test data, accuracy was 83% when trained for 30 epochs. The results and analysis can be found in the research paper.
 
+## Resources
+
+For more in-depth information about the 'Driver's Companion: Drowsiness Detection and Music Recommendation System', please refer to the following resources:
+
+- [Research Paper](https://ieeexplore.ieee.org/document/10037226): Detailed documentation of our research, methodologies, and findings.
+- [Project Presentation](https://docs.google.com/presentation/d/1TLywEBDhEMEjHs0gyVwQvLz0fg3Ko8Hu/edit?usp=sharing&ouid=100124470341926430772&rtpof=true&sd=true): A comprehensive presentation that outlines the project's goals, design, and outcomes.
+
+These resources provide a deeper understanding of the project and its impact on driving safety.
+
 ## Citation
 
 If you use this code or dataset in your research, please cite the following paper:
@@ -79,4 +90,6 @@ This code is licensed under the [MIT License](LICENSE).
 
 ## Contact
 
-If you have any questions or comments about this project, please feel free to contact the authors. Contact information can be found in the research paper or the GitHub repository.
+If you have any questions or comments about this project, do feel free to reach out via [email](mailto:shreektrivedi2020@gmail.com) or connect on [LinkedIn](https://www.linkedin.com/in/shreel-trivedi/).
+I am always open to discussing this project, potential collaborations, or any other inquiries you might have.
+
