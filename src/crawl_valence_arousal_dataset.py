@@ -55,4 +55,4 @@ df = pd.DataFrame(data_dict)
 
 # Drop duplicates
 df.drop_duplicates(subset = "id", keep = "first", inplace = True)
-df.to_csv("valence_arousal_dataset.csv", index = False)
+df.to_csv("data/valence_arousal_dataset.csv", index = False)
